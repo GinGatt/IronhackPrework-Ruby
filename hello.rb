@@ -62,12 +62,25 @@ my_hash["GAL"] = "Galicia"
 
 puts my_hash.has_key?("AST")
 puts my_hash.select { |key, value| key.include?("G") }
-=end
-
 
 puts "what is this?".class
 puts 3.class
 puts [1,2,3].class
+
+numbers = [1,2,3]
+for element in numbers
+  puts "-> #{element}"
+end
+=end
+
+
+
+
+
+
+
+
+
 
 
 
