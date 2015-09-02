@@ -26,7 +26,6 @@ numbers.each do |num|
 		puts "#{num}"
 	end
 end
-=end
 
 #iteration 3 (+ Bang if number starts with 1)
 numbers = 1..100
@@ -49,6 +48,37 @@ numbers.each do |num|
 		puts "#{num}"
 	end
 end
+=end
+
+#Iteration 4 - Refactoring
+for i in 1..100
+	result = ""
+	if i % 3 == 0
+		result = result + "Fizz"
+	end
+
+	if i % 5 == 0
+		result = result + "Buzz"
+	end
+
+	if i.to_s[0]== "1"
+		result = result + "Bang"
+	end
+
+	if i % 3 != 0 && i % 5 != 0 && i.to_s[0] != "1"
+		result = i
+	end
+
+	puts result
+end
+
+
+
+
+
+
+
+
 
 
 
