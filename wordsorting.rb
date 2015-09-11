@@ -33,10 +33,10 @@ def custom_sort(string)
 	end
 	print new_array
 end
-=end
+
 
 #Third sorting function that attempts a bubble sort method
-#n-1?
+#n-1 max passes. 
 def custom_sort(string)
 	#remove punctuation
 	#split sentence string into an array based on whitespace char
@@ -57,7 +57,22 @@ def custom_sort(string)
 	end
 	print sent_array
 end
+=end
 
+#Fourth sorting function that capitalizes on built in sort function in Ruby
+def custom_sort(string)
+	#remove punctuation
+	#split sentence string into an array based on whitespace char
+	#comparison sort with both being upper case (cap irrelevant)
+	no_punct = string.gsub(/[^0-9a-z]/i, ' ')
+	sent_array = no_punct.split(/\s/)
+	cap_irrelevant_sort = sent_array.sort do | word1, word2 |
+		word1.upcase <=> word2.upcase
+	end 
+
+	print cap_irrelevant_sort
+end
+	
 puts "Give me a sentence!"
 sentence = gets.chomp
 custom_sort(sentence)
