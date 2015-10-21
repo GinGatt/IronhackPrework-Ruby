@@ -2,10 +2,10 @@
 class Home
 	attr_accessor(:name, :city, :capacity, :price)
 	def initialize(name, city, capacity, price)
-	    @name = name
-	    @city = city
-	    @capacity = capacity
-	    @price = price
+		@name = name
+		@city = city
+		@capacity = capacity
+		@price = price
 	end
 	def city
    		city = @city
