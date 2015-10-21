@@ -1,29 +1,28 @@
 #Exercise:each
 class Home
-  attr_accessor(:name, :city, :capacity, :price)
-
-  def initialize(name, city, capacity, price)
-    @name = name
-    @city = city
-    @capacity = capacity
-    @price = price
-   def city
-   	city = @city
-   end
-  end
+	attr_accessor(:name, :city, :capacity, :price)
+	def initialize(name, city, capacity, price)
+	    @name = name
+	    @city = city
+	    @capacity = capacity
+	    @price = price
+	end
+	def city
+   		city = @city
+   	end
 end
 
 homes = [
-  Home.new("Nizar's place", "San Juan", 2, 42),
-  Home.new("Fernando's place", "Seville", 5, 47),
-  Home.new("Josh's place", "Pittsburgh", 3, 41),
-  Home.new("Gonzalo's place", "Málaga", 2, 45),
-  Home.new("Ariel's place", "San Juan", 4, 49),
-  Home.new("Joe's place", "San Diego", 8, 70),
-  Home.new("Mary's place", "Boston", 2, 50),
-  Home.new("Kate's place", "Dallas", 4, 60),
-  Home.new("David's place", "Richmond", 3, 65),
-  Home.new("Gin's place", "Jupiter", 2, 80),
+	Home.new("Nizar's place", "San Juan", 2, 42),
+	Home.new("Fernando's place", "Seville", 5, 47),
+	Home.new("Josh's place", "Pittsburgh", 3, 41),
+	Home.new("Gonzalo's place", "Málaga", 2, 45),
+	Home.new("Ariel's place", "San Juan", 4, 49),
+	Home.new("Joe's place", "San Diego", 8, 70),
+	Home.new("Mary's place", "Boston", 2, 50),
+	Home.new("Kate's place", "Dallas", 4, 60),
+	Home.new("David's place", "Richmond", 3, 65),
+	Home.new("Gin's place", "Jupiter", 2, 80),
 ]
 =begin
 homes.each{ |hm| 
